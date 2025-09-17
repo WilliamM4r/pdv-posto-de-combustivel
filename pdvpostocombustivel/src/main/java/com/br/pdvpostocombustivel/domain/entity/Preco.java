@@ -1,4 +1,4 @@
 package com.br.pdvpostocombustivel.domain.entity;
 
-public class Contato {
+public class Preco {
 }
