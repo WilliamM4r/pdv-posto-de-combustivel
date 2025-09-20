@@ -14,15 +14,19 @@ import java.util.Date;
 public class Pessoa {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-
 private long id;
+
+@Column(name = "data")
 @notBlank(name = "nome_completo", nullable = false, length = 200)
     private String nomeCompleto;
     private String cpfCnpj;
     private LocalDate dataNascimento;
     private Long numeroCtps;
 
-    public Pessoa (String nomeCompleto, String cpfCnpj, LocalDate dataNascimento, Long numeroCtps){
+    public Pessoa (String nomeCompleto,
+                   String cpfCnpj,
+                   LocalDate dataNascimento,
+                   Long numeroCtps){
         this.nomeCompleto = nomeCompleto;
         this.cpfCnpj = cpfCnpj;
         this.dataNascimento = dataNascimento;
