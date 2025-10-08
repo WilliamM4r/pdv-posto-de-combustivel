@@ -23,18 +23,11 @@ private long id;
     private LocalDate dataNascimento;
     private Long numeroCtps;
 
-    public Pessoa (String nomeCompleto,
-                   String cpfCnpj,
-                   LocalDate dataNascimento,
-                   Long numeroCtps){
+    public Pessoa (String nomeCompleto, String cpfCnpj, LocalDate dataNascimento, Long numeroCtps){
         this.nomeCompleto = nomeCompleto;
         this.cpfCnpj = cpfCnpj;
         this.dataNascimento = dataNascimento;
         this.numeroCtps = numeroCtps;
-
-    }
-
-    public Pessoa() {
 
     }
 

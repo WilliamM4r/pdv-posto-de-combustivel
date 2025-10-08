@@ -11,10 +11,6 @@ public class Custo {
         this.custoFisico = custoFisico;
     }
 
-    public Custo() {
-
-    }
-
     public double getImposto(){
         return imposto;
     }

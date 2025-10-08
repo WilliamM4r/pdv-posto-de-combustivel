@@ -10,10 +10,6 @@ public class Acesso {
 
     }
 
-    public Acesso () {
-
-    }
-
     public String getUsuario(){
         return usuario;
     }
