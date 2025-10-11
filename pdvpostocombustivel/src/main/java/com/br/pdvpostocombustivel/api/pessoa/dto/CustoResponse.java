@@ -1,4 +1,9 @@
 package com.br.pdvpostocombustivel.api.pessoa.dto;
 
-public record CustoResponse() {
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+
+public record CustoResponse(Double imposto, Double custoVariavel, Double custoFisico, Double margemLucro, @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+LocalDate dataProcessamento) {
 }

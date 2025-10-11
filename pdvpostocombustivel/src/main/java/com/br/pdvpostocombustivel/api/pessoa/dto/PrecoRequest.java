@@ -1,4 +1,7 @@
 package com.br.pdvpostocombustivel.api.pessoa.dto;
 
-public record PrecoRequest() {
+import javax.xml.crypto.Data;
+import java.math.BigDecimal;
+
+public record PrecoRequest(BigDecimal valor, Data dataAlteracao, Data horaAlteracao) {
 }

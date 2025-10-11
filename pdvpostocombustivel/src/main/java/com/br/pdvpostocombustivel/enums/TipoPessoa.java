@@ -2,7 +2,7 @@ package com.br.pdvpostocombustivel.enums;
 
 public enum TipoPessoa {
 
-    FISICA("Pessoa Fisica");
+    FISICA("Pessoa Fisica"),
     JURIDICA("Pessoa Juridica");
 
     private final String descricao;
