@@ -60,6 +60,9 @@ public class Pessoa {
         this.tipoPessoa = tipoPessoa;
     }
 
+    public Pessoa(String nome, String cpfCnpj, String numeroCtpj, String tipo) {
+    }
+
     // Getters/Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
