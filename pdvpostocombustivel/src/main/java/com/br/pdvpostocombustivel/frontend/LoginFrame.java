@@ -16,7 +16,7 @@ public class LoginFrame extends JFrame {
         // Adiciona um usuário padrão para login inicial
         dao.adicionar(new Acesso("admin", "1234"));
 
-        setTitle("Login - Sistema de Pessoas");
+        setTitle("Login - Sistema de Acesso");
         setSize(350, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -51,7 +51,7 @@ public class LoginFrame extends JFrame {
 
         if (dao.validarLogin(usuario, senha)) {
             JOptionPane.showMessageDialog(this, "Login bem-sucedido!");
-            PessoaCRUD telaCrud = new PessoaCRUD(dao);
+            AcessoCRUD telaCrud = new AcessoCRUD(dao);
             telaCrud.setVisible(true);
             dispose(); // fecha a tela de login
         } else {

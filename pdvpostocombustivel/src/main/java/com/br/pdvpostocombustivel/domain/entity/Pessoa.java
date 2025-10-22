@@ -63,6 +63,9 @@ public class Pessoa {
     public Pessoa(String nome, String cpfCnpj, String numeroCtpj, String tipo) {
     }
 
+    public Pessoa(String anaSouza) {
+    }
+
     // Getters/Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
